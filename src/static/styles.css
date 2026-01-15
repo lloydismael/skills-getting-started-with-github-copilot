@@ -142,3 +142,73 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 15px;
+  border-top: 1px dashed #ddd;
+  padding-top: 10px;
+}
+
+.participants-section h5 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.participants-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 6px 10px;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #444;
+}
+
+.participant-item span {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.participant-remove {
+  border: none;
+  background: none;
+  color: #c62828;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.participant-remove svg {
+  width: 16px;
+  height: 16px;
+}
+
+.participant-remove:hover {
+  background-color: rgba(198, 40, 40, 0.1);
+  transform: translateY(-1px) scale(1.05);
+}
+
+.participants-empty {
+  font-style: italic;
+  color: #777;
+}
